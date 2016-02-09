@@ -11,14 +11,85 @@
     </head>
 
     <body>
+      <nav>
+        <div class="nav-wrapper yellow">
+          <a href="index.html" class="brand-logo center"><img src="images/leaf.png" alt="Bloc It Off"></a>
+        </div>
+      </nav>
       <main role="main">
         <section role="region" class="container">
           <div class="row">
             <div class="col s6 offset-s3">
               <div class="card-panel">
-                <span>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-                </span>
+                <div class="row">
+                    <div class="col s12">
+                      <ul class="tabs">
+                        <li class="tab col s3"><a class="active" href="#test1">Sign Up</a></li>
+                        <li class="tab col s3"><a href="#test2">Log In</a></li>
+                      </ul>
+                    </div>
+                    <!-- Sign Up Form -->
+                    <div id="test1" class="col s12">
+                      <div class="row">
+                        <form class="col s12">
+                          <div class="row">
+                            <div class="input-field col s6">
+                              <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                              <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                              <input id="last_name" type="text" class="validate">
+                              <label for="last_name">Last Name</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input id="email" type="email" class="validate">
+                              <label for="email">Email</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input id="password" type="password" class="validate">
+                              <label for="password">Password</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s6 offset-s4">
+                              <a class="waves-effect waves-light btn blue accent-2">Sign Up</a>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- End Sign Up Form -->
+                    
+                    <!-- Log In Form -->
+                    <div id="test2" class="col s12">
+                      <div class="row">
+                        <form class="col s12">
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input id="email" type="email" class="validate">
+                              <label for="email">Email</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input id="password" type="password" class="validate">
+                              <label for="password">Password</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s6 offset-s4">
+                              <a class="waves-effect waves-light btn blue accent-2">Log In</a>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- End Log In Form -->
+                  </div>
             </div>
           </div>
         </section>
