@@ -11,16 +11,31 @@
     </head>
 
     <body>
-      <!-- Navbar goes here -->
+      <!-- Dropdown Structure -->
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a href="javascript:void(0);">List 1</a></li>
+        <li class="divider"></li>
+        <li><a href="javascript:void(0);">List 2</a></li>
+        <li class="divider"></li>
+        <li><a href="javascript:void(0);">List 3</a></li>
+      </ul>
+      <!-- Navbar -->
       <nav>
         <div class="nav-wrapper yellow">
-          <a href="index.html" class="brand-logo center"><img src="../../images/leaf-small.png" alt="Bloc It Off"></a>
+          <a href="index.html" class="brand-logo"><img src="../../images/leaf-small.png" alt="Bloc It Off"></a>
+          <ul class="right hide-on-med-and-down">
+            <li><img src="../../images/avatar.jpg" class="circle responsive-img"> <!-- notice the "circle" class --></li>
+            <li><a href="sass.html">User name</a></li>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
         </div>
       </nav>
+      <!-- End Nav -->
     <main role="main">
       <section role="region" class="container">
         <div class="row">
-          <div class="col offset-s3">
+          <div class="col offset-s2">
               <a class="waves-effect waves-light btn-large blue accent-2"><i class="material-icons left">add</i>Add list</a>
           </div>
           <div class="col s6">
@@ -28,14 +43,34 @@
               <div class="row">
                 <form class="col s12">
                   <div class="row">
-                    <div class="input-field col s9">
-                        <i class="material-icons left">add</i>
+                    <div class="input-field col s12">
+                        <form>
+                          <input type="text" name="Add new item"/>
+                          <input type="submit" value="Submit"/>
+                        </form>
                     </div>
                   </div>
-                  </div>
-                </form>
+               </form>
               </div>
             </div>
+          </div>
+         </div>
+        </section>
+        <!-- Modal Trigger -->
+        <div class="col">
+            <a class='btn' href='#demoModal' modal>Show Modal</a>
+        </div>
+        <!-- Modal Structure -->
+        <div id="demoModal" class="modal">
+            <div class="modal-content">
+                <h4>Modal header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+      </main>
     
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
