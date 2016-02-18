@@ -23,8 +23,8 @@
       
       <!-- CSS -->
       <style>
-          .topbar__right {
-              margin-top: 20px;
+          .nav {
+            margin-top: 20px;
           }
       </style>
     </head>
@@ -41,9 +41,9 @@
       <!-- Navbar -->
       <nav>
         <div class="nav-wrapper yellow">
-          <a href="index.html" class="brand-logo"><img src="../../images/leaf-small.png" alt="Bloc It Off"></a>
+          <a href="index.html" class="brand-logo" style="margin-top: 5px; margin-left: 20px;"><img src="../../images/leaf-small.png" alt="Bloc It Off"></a>
           <ul class="right hide-on-med-and-down">
-            <li><img src="../../images/avatar.jpg" class="circle responsive-img"> <!-- notice the "circle" class --></li>
+            <li><img src="../../images/avatar.jpg" class="circle responsive-img" style="margin-top: 8px;"> <!-- notice the "circle" class --></li>
             <li><a href="sass.html">User name</a></li>
             <!-- Dropdown Trigger -->
             <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -54,59 +54,20 @@
     <main role="main">
       <section role="region" class="container">
         <div class="row">
-          <div class="col offset-s2">
-              <a class="waves-effect waves-light btn-large blue accent-2"><i class="material-icons left">add</i>Add list</a>
+          <div class="col s12 m3">
+              <a class="waves-effect waves-light btn blue accent-2" style="margin-top: 40px; height:45px; padding: 5px 30px 0 25px"><i class="material-icons left">add</i>Add list</a>
           </div>
-          <div class="col s6">
-            <div class="card-panel">  
-              <div class="row">
-                <form class="col s12">
-                  <div class="row">
-                    <div class="input-field col s12">
-                        <div class="container">
-                          <!-- Todos input -->
-                          <form role="form" ng-submit="addTodo()">
-                            <div class="row">
-                              <div class="input-group">
-                                <input type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
-                                <span class="input-group-btn">
-                                  <input type="submit" class="btn btn-primary" value="Add">
-                                </span>
-                              </div>
-                            </div>
-                          </form>
-                          <!-- Todo List -->
-                          <p class="form-group" ng-repeat="todo in todos">
-                            <input type="text" ng-model="todo" class="form-control">
-                            <span class="input-group-btn">
-                              <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
-                            </span>
-                          </p>
-                        </div>
-                        
-                        </div>
+          <div class="col s12 m7">
+            <div class="collection" style="margin-top: 40px;">
+                <form role="form" ng-submit="addTodo()" style="margin-bottom: -15px; padding: 0 0 0 15px">
+                    <div class="input-group">
+                      <input type="text" ng-model="todo" placeholder=" + Add new item" class="form-control">
                     </div>
-                  </div>
-               </form>
-              </div>
+                </form>
             </div>
           </div>
-         </div>
-        </section>
-        <!-- Modal Trigger -->
-        <div class="col">
-            <a class='btn' href='#demoModal' modal>Show Modal</a>
         </div>
-        <!-- Modal Structure -->
-        <div id="demoModal" class="modal">
-            <div class="modal-content">
-                <h4>Modal header</h4>
-                <p>A bunch of text</p>
-            </div>
-            <div class="modal-footer">
-                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-            </div>
-        </div>
+       </section>
       </main>
     
     </body>
