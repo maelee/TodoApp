@@ -1,72 +1,101 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
-      <link rel="stylesheet" href="../../css/returning_user.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
 
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-      <script type="text/javascript" src="../../js/vendor/materialize.min.js"></script>
-      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/vendor/materialize.min.js"></script>
+    <!-- Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../../css/materialize.css"  media="screen,projection"/>
+    <!-- End Imports -->
 
-      <script type="text/javascript" src="src/angular-materialize.js"></script>
-      <!-- App -->
-      <script type="text/javascript" src="js/lists.js"></script>
+    <!-- App CSS -->
+    <link type="text/css" rel="stylesheet" href="../../css/topbar.css" />
+    <link type="text/css" rel="stylesheet" href="../../css/returning_user.css" />
+    <!-- End APP CSS -->
     </head>
 
     <body>
-      <!-- Dropdown Structure -->
-      <ul id='dropdown1' class='dropdown-content'>
-        <li><a href="javascript:void(0);">List 1</a></li>
-        <li class="divider"></li>
-        <li><a href="javascript:void(0);">List 2</a></li>
-        <li class="divider"></li>
-        <li><a href="javascript:void(0);">List 3</a></li>
-      </ul>
-      <!-- Navbar goes here -->
-      <nav>
-        <div class="nav-wrapper yellow">
-          <a href="index.html" class="brand-logo"><img src="../../images/leaf-small.png" alt="Bloc It Off"></a>
-          <ul class="right hide-on-med-and-down">
-            <li><img src="../../images/avatar.jpg" class="circle responsive-img"> <!-- notice the "circle" class --></li>
-            <li><a href="sass.html">User name</a></li>
-            <!-- Dropdown Trigger -->
-            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
-          </ul>
-        </div>
-      </nav>
-    <main role="main">
-      <section role="region" class="container">
-          <div class="row">
-            <div class="col s12 m3">
-              <div class="collection">
-                <a href="#!" class="collection-item active yellow lighten-4">Personal</a>
+      <header role="banner" class="topbar">
+        <nav role="navigation" class="nav-wrapper yellow">
+          <div class="container">
+            <div class="row">
+              <ul class="topbar__left topbar-list col s6">
+                <li>
+                  <a href="index.html">
+                    <img src="../../images/leaf-small.png" alt="Bloc It Off" />
+                  </a>
+                </li>
+              </ul>
+              <ul class="topbar__right topbar-list col s6">
+                <li class="topbar-list-item">
+                  <ul class="right hide-on-med-and-down">
+                    <li>
+                      <img src="../../images/avatar.jpg" class="circle responsive-img">
+                    </li>
+                    <li>
+                      <a class="grey-text text-darken-4" href="#">Scout Finch</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-button" href="#" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="topbar-list-item">
+                  <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="javascript:void(0);">List 1</a></li>
+                    <li class="divider"></li>
+                    <li><a href="javascript:void(0);">List 2</a></li>
+                    <li class="divider"></li>
+                    <li><a href="javascript:void(0);">List 3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main role="main" class="container">
+      <div role="region" class="row">
+        <aside role="sidebar" class="col s12 m3">
+          <h5 class="title" style="margin-top: 40px;">My Lists</h5>
+            <div class="collection" style="margin-top: 20px;">
+                <a href="#!" class="collection-item active">Personal</a>
                 <a href="#!" class="collection-item">Work</a>
                 <a href="#!" class="collection-item">Posse weekend</a>
                 <a href="#!" class="collection-item">J's bday</a>
-              </div>
-              <a class="waves-effect waves-light btn blue accent-2"><i class="material-icons left">add</i>Add new list</a>
+                <a class="waves-effect waves-light btn blue accent-2"><i class="material-icons left">add</i>Add new list</a>
             </div>
-            <div class="col s12 m7">
-              <a class="waves-effect waves-light btn blue accent-2"><i class="material-icons left">add</i>Add new item</a>
-              <div class="collection">
-                <a href="#!" class="collection-item">Get ingredients for dip</a>
-                <a href="#!" class="collection-item">Register car</a>
-                <a href="#!" class="collection-item">Buy present for Nate</a>
-                <a href="#!" class="collection-item">Get letter notarized</a>
+         </aside>
+            <section class="col s12 m7">
+              <h5 class="title" style="margin-top: 40px;">Personal</h5>
+              <div class="collection" style="margin-top: 20px;">
+                <form role="form" ng-submit="addTodo()" style="margin-bottom: -15px; padding: 0 0 0 15px">
+                <div class="input-group">
+                  <input type="text" ng-model="todo" placeholder=" + Add new item" class="form-control">
+                </div>
+                </form>
+                <a href="#!" class="collection-item"><i class="tiny material-icons">done</i>Get ingredients for dip</a>
+                <a href="#!" class="collection-item"><i class="tiny material-icons">done</i>Register car</a>
+                <a href="#!" class="collection-item"><i class="tiny material-icons">done</i>Buy present for Nate</a>
+                <a href="#!" class="collection-item"><i class="tiny material-icons">done</i>Get letter notarized</a>
               </div>
-            </div>
-          </div>
-          
-          
-    
+           </section>
+         </div>
+       </main>
+      <!-- Vender JS -->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+      <script type="text/javascript" src="../../js/vendor/materialize.min.js"></script>
+      <!-- End Vendor JS -->
+
+      <!-- App JS -->
+      <script type="text/javascript" src="../../js/lists.js"></script>
+      <!-- End App JS -->
+ 
     </body>
   </html>

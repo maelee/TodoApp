@@ -1,3 +1,35 @@
-.collection-item {
+.collection .collection-item.active {
+  background-color: #FBC02D;
+  color: #212121;
+}
+.collection a.collection-item {
     color: #212121;
+}
+.collection a.collection-item:not(.active):hover {
+  background-color: #FBC02D;
+}
+.collection .collection-item .material-icons {
+    color: #727272;
+    padding-right: 10px;
+}
+
+.dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected {
+  background-color: #FFF9C4;
+}
+
+.dropdown-content li.active.selected {
+  background-color: #FBC02D;
+}
+
+.dropdown-content li.divider {
+  min-height: 0;
+  height: 1px;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+  font-size: 16px;
+  color: #212121
+  display: block;
+  line-height: 22px;
+  padding: 14px 16px;
 }

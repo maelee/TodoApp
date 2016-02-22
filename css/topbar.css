@@ -1,3 +1,10 @@
-nav .brand-logo {
-    margin-top: 20px;
+/* Topbar Styles */
+
+.topbar .nav-wrapper {
+  padding: 7px 0;
+  overflow: hidden;
+}
+
+.topbar .topbar__right .topbar-list-item {
+  float: right;
 }

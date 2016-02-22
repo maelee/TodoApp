@@ -1,0 +1,23 @@
+.tabs .tab a {
+  color: #FBC02D;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: color .28s ease;
+}
+
+.tabs .tab a:hover {
+  color: #FFEB3B;
+}
+.tabs .indicator {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: #FBC02D;
+  will-change: left, right;
+}
+.input-field .prefix.active {
+  color: #448AFF;
+}
