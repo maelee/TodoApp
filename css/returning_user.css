@@ -13,6 +13,11 @@
     padding-right: 10px;
 }
 
+.collection-item.is-completed {
+    text-decoration: line-through;
+    color: #ebebeb;
+}
+
 .dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected {
   background-color: #FFF9C4;
 }

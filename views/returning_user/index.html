@@ -24,8 +24,7 @@
             <div class="row">
               <ul class="topbar__left topbar-list col s6">
                 <li>
-                  <a href="index.html">
-                    <img src="../../images/leaf-small.png" alt="Bloc It Off" />
+                  <a href="../../index.html" class="site-logo"><img src="../../images/leaf-small.png" alt="Bloc It Off" />
                   </a>
                 </li>
               </ul>
@@ -36,21 +35,16 @@
                       <img src="../../images/avatar.jpg" class="circle responsive-img">
                     </li>
                     <li>
-                      <a class="grey-text text-darken-4" href="#">Scout Finch</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-button" href="#" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i>
+                      <a class="dropdown-button" href="#" data-activates="dropdown1">Phoebe Caulfield<i class="material-icons right">arrow_drop_down</i>
                       </a>
                     </li>
                   </ul>
                 </li>
                 <li class="topbar-list-item">
                   <ul id='dropdown1' class='dropdown-content'>
-                    <li><a href="javascript:void(0);">List 1</a></li>
+                    <li><a href="javascript:void(0);"><i class="tiny material-icons right">settings</i>Settings</a></li>
                     <li class="divider"></li>
-                    <li><a href="javascript:void(0);">List 2</a></li>
-                    <li class="divider"></li>
-                    <li><a href="javascript:void(0);">List 3</a></li>
+                    <li><a href="../../index.html" class="waves-effect waves-yellow btn-flat"><i class="tiny material-icons right">exit_to_app</i>Log out</a></li>
                   </ul>
                 </li>
               </ul>
@@ -78,10 +72,10 @@
                   <input type="text" ng-model="todo" placeholder=" + Add new item" class="form-control">
                 </div>
                 </form>
-                <a href="#!" class="collection-item"><i class="tiny material-icons">done</i>Get ingredients for dip</a>
-                <a href="#!" class="collection-item"><i class="tiny material-icons">done</i>Register car</a>
-                <a href="#!" class="collection-item"><i class="tiny material-icons">done</i>Buy present for Nate</a>
-                <a href="#!" class="collection-item"><i class="tiny material-icons">done</i>Get letter notarized</a>
+                <a href="#!" class="todo-list-item collection-item"><i class="tiny material-icons">done</i>Get ingredients for dip</a>
+                <a href="#!" class="todo-list-item collection-item"><i class="tiny material-icons">done</i>Register car</a>
+                <a href="#!" class="todo-list-item collection-item"><i class="tiny material-icons">done</i>Buy present for Nate</a>
+                <a href="#!" class="todo-list-item collection-item"><i class="tiny material-icons">done</i>Get letter notarized</a>
               </div>
            </section>
          </div>
@@ -96,6 +90,12 @@
       <!-- App JS -->
       <script type="text/javascript" src="../../js/lists.js"></script>
       <!-- End App JS -->
+        
+        <script>
+            $('.todo-list-item').on('click', function () {
+                $(this).toggleClass('is-completed');
+            })
+        </script>
  
     </body>
   </html>

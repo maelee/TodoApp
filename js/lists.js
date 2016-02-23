@@ -1,25 +1,12 @@
-var app = angular.module('mytodoApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.todos = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
-    $scope.addTodo = function () {
-      $scope.todos.push($scope.todo);
-      $scope.todo = '';
-    };
-    $scope.removeTodo = function (index) {
-      $scope.todos.splice(index, 1);
-    };
-  });
-  .controller('CollapsibleController', ["$scope", function ($scope) {
-      $scope.collapsibleElements = [{
-          icon: 'mdi-image-filter-drama',
-          title: 'First',
-          content: 'Lorem ipsum dolor sit amet.'
-      },{
-          icon: 'mdi-maps-place',
-          title: 'Second',
-          content: 'Lorem ipsum dolor sit amet.'
-      },{
-          icon: 'mdi-social-whatshot',
-          title: 'Third',
-          content: 'Lorem ipsum dolor sit amet.'
-      }];
+$(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal({
+      dismissible: false, // Modal can be dismissed by clicking outside of the modal
+      opacity: .5, // Opacity of modal background
+      in_duration: 300, // Transition in duration
+      out_duration: 200, // Transition out duration
+    }
+  );
+});
+
+ 
