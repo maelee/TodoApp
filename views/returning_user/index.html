@@ -44,7 +44,7 @@
                   <ul id='dropdown1' class='dropdown-content'>
                     <li><a href="javascript:void(0);"><i class="tiny material-icons right">settings</i>Settings</a></li>
                     <li class="divider"></li>
-                    <li><a href="../../index.html" class="waves-effect waves-yellow btn-flat"><i class="tiny material-icons right">exit_to_app</i>Log out</a></li>
+                    <li><a href="../../index.html"><i class="tiny material-icons right">exit_to_app</i>Log out</a></li>
                   </ul>
                 </li>
               </ul>
@@ -61,21 +61,43 @@
                 <a href="#!" class="collection-item">Work</a>
                 <a href="#!" class="collection-item">Posse weekend</a>
                 <a href="#!" class="collection-item">J's bday</a>
-                <a class="waves-effect waves-light btn blue accent-2"><i class="material-icons left">add</i>Add new list</a>
             </div>
+               
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger blue accent-2" href="#modal1" style="height:45px; width:195px; padding: 5px 0 0 0;">Add list</a>
+
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h5 class="center">What kind of list would you like to make?</h5>
+              <p class="center">Choose a selection below or create your own</p>
+              <ul class="collection with-header">
+                <li class="collection-item"><div>Work<a href="#!" class="secondary-content"><input class="with-gap" name="group1" type="radio" id="test1"  /><label for="test1"></label></a></div></li>
+                <li class="collection-item"><div>Personal<a href="#!" class="secondary-content"><input class="with-gap" name="group1" type="radio" id="test2"  /><label for="test2"></label></a></div></li>
+                <li class="collection-item"><div>Groceries<a href="#!" class="secondary-content"><input class="with-gap" name="group1" type="radio" id="test3"  /><label for="test3"></label></a></div></li>
+                <li class="collection-item"><div>Create your own<a href="#!" class="secondary-content"><input class="with-gap" name="group1" type="radio" id="test4"  /><label for="test4"></label></a></div></li>
+              </ul>
+            
+            </div>
+            <div class="modal-footer">
+              <a href="../../views/returning_user/index.html" class=" modal-action modal-close waves-effect waves-blue btn-flat"><i class="material-icons left">add</i>Add list</a>
+            </div>
+          </div>
          </aside>
-            <section class="col s12 m7">
-              <h5 class="title" style="margin-top: 40px;">Personal</h5>
-              <div class="collection" style="margin-top: 20px;">
-                <form role="form" ng-submit="addTodo()" style="margin-bottom: -15px; padding: 0 0 0 15px">
+         <section class="col s12 m7">
+           <h5 class="title" style="margin-top: 40px;">Personal</h5>
+            <div class="collection" style="margin-top: 20px">
+              <form role="form" ng-submit="addTodo()" style="margin-bottom: -23px; padding: 0 0 0 15px">
                 <div class="input-group">
                   <input type="text" ng-model="todo" placeholder=" + Add new item" class="form-control">
                 </div>
-                </form>
-                <a href="#!" class="todo-list-item collection-item"><i class="tiny material-icons">done</i>Get ingredients for dip</a>
-                <a href="#!" class="todo-list-item collection-item"><i class="tiny material-icons">done</i>Register car</a>
-                <a href="#!" class="todo-list-item collection-item"><i class="tiny material-icons">done</i>Buy present for Nate</a>
-                <a href="#!" class="todo-list-item collection-item"><i class="tiny material-icons">done</i>Get letter notarized</a>
+              </form>
+                <ul class="collection">
+                  <li class="todo-list-item collection-item"><div><i class="tiny material-icons">done</i>Get ingredients for dip<a href="#!" class="secondary-content"><i class="tiny material-icons">close</i></a></div></li>
+                  <li class="todo-list-item collection-item"><div><i class="tiny material-icons">done</i>Register car<a href="#!" class="secondary-content"><i class="tiny material-icons">close</i></a></div></li>
+                  <li class="todo-list-item collection-item"><div><i class="tiny material-icons">done</i>Buy present for Nate<a href="#!" class="secondary-content"><i class="tiny material-icons">close</i></a></div></li>
+                  <li class="todo-list-item collection-item"><div><i class="tiny material-icons">done</i>Get letter notarized<a href="#!" class="secondary-content"><i class="tiny material-icons">close</i></a></div></li>
+                </ul>
               </div>
            </section>
          </div>
@@ -88,7 +110,7 @@
       <!-- End Vendor JS -->
 
       <!-- App JS -->
-      <script type="text/javascript" src="../../js/lists.js"></script>
+      <script type="text/javascript" src="../../js/returning_user.js"></script>
       <!-- End App JS -->
         
         <script>
