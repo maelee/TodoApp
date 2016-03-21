@@ -8,3 +8,27 @@
 .topbar .topbar__right .topbar-list-item {
   float: right;
 }
+
+nav {
+  color: #212121;
+  background-color: #FFEB3B;
+}
+
+nav ul li {
+  color: #212121;
+}
+
+nav ul a {
+  color: #212121;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+  font-size: 16px;
+  color: #212121;
+}
+
+.modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
+  color: #212121;
+  float: right;
+  margin: 6px 0;
+}
